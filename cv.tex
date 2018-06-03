@@ -19,6 +19,15 @@
 \definecolor{headings}{HTML}{701112} % Dark red color for headings
 % Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
 
+\usepackage{graphicx}
+\newlength{\mytextsize}
+
+\makeatletter
+\newcommand{\Homeicon}[0]{\setlength{\mytextsize}{\f@size pt}\includegraphics[height=\mytextsize]{images/home.png} }
+\makeatother
+
+\newcommand{\Lettericon}{\raisebox{0.5\depth}{\Letter}}
+
 \hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
 
 \usepackage{fancyhdr}
@@ -54,8 +63,8 @@
 
 \colorbox{shade}{\textcolor{text1}{
 \begin{tabular}{c|p{7cm}}
-\raisebox{-1pt}{\Letter} & \href{mailto:zanema2@illinois.edu}{zanema2@illinois.edu} \\ % Email address
-\Keyboard & \href{https://zanema.com}{https://zanema.com} \\ % Website
+\raisebox{-1pt}{\Lettericon} & \href{mailto:zanema2@illinois.edu}{zanema2@illinois.edu} \\ % Email address
+\Homeicon & \href{https://zanema.com}{https://zanema.com} \\ % Website
 \end{tabular}
 }
 }\\[10pt]
@@ -83,11 +92,11 @@
 %------------------------------------------------
 
 2008 -- 2012 & \textbf{Bachelor of Arts} \\ 
-& \textsc{Chemistry}---\small{Honors} \\ 
+& \textsc{Chemistry} --- \small{Honors} \\ 
 & \textit{Princeton University}\\
 &\\
 	  
-\end{tabular}\\[10pt]
+\end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	TEACHING
@@ -96,52 +105,78 @@
 \section{Teaching} 
 
 \begin{tabular}{rl}
+
+Spring 2018	 & \textbf{CS 461: Intro to Comp.\ Security}\\
+& \textsc{Teaching Assistant}\\ \\
+ 
+%------------------------------------------------
+
 Fall 2015	 & \textbf{CS 241: System Programming}\\
 & \textsc{Teaching Assistant*}\\ \\
 
 %------------------------------------------------
 
-Spring 2018	 & \textbf{CS 461: Intro to Comp. Security}\\
-& \textsc{Teaching Assistant}\\ \\
 
 \multicolumn{2}{l}{\textit{*Outstanding instructor rating (top 10\%)}}
 \end{tabular}\\[10pt]
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
+%	SERVICE
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills} 
+\section{Service} 
 
 \begin{tabular}{rl}
-Basic Knowledge
-& \textsc{java}, Adobe Illustrator\\ 
+2016 -- \textsc{Present} & \textbf{Students Advising Grad.\ Ed.}\\
 & \\
-Intermediate Knowledge
-& \textsc{python}, \textsc{html}, \LaTeX,\\
-& OpenOffice, Linux,\\
-& Microsoft Windows \\
-& Computer Hardware \& \\
-& Support\\ \\
+
+2017 -- \textsc{Present} & \textbf{Senate Committee on IT} \\
+& \\
+
+2017 -- \textsc{Present} & \textbf{CS Graduate Student Org.}\\
+& \textsc{Social Chair} \\
+& \\
+
 \end{tabular}
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills} 
+\section{Invited Talks} 
 
-\begin{tabular}{rl}
-\textsc{Conferences}
-& Oral Presentation at the California \\
-& Computer Science Conference -- 2010\\
-& \\
-\textsc{Posters}
-& Poster at the Annual Programming \\
-& Conference in Oregon -- 2009 \\
-\end{tabular}\\[10pt]
+\textsc{Conferences}\\
+\hspace*{15pt} \textbf{Mirai and the Future of IoT botnets}\\
+\hspace*{15pt} M3AAWG: 42nd General Meeting -- Feb 2018 \\
+
+\textsc{Seminars}\\
+\hspace*{15pt} \textbf{Understanding the Mirai botnet} \\
+\hspace*{15pt} University of Chicago Security Seminar -- Nov 2017 \\
 
 %----------------------------------------------------------------------------------------
+%   RESEARCH INTERNSHIPS
+%----------------------------------------------------------------------------------------
+
+\section{Research Internships} 
+
+\begin{tabular}{rl}
+Jun 2018 -- Jul 2018 & \textbf{Manos Antonakakis}\\
+& \textsc{Georgia Tech}\\
+&\\
+
+Jun 2016 -- Aug 2016 & \textbf{Vern Paxson}\\
+& \textsc{ICSI, UC Berkeley}\\
+& \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	HOBBIES
+%----------------------------------------------------------------------------------------
+
+\section{Hobbies} 
+
+\hspace*{15pt} Climbing, Alpinism, Basketball, Piano, Guitar \\
 	
 \end{minipage} % End right-hand side of the page
 \hfill
