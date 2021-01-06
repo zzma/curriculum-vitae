@@ -34,6 +34,10 @@
 \pagestyle{plain}
 \fancyhead[R]{\thepage}
 
+% modified date
+\def\parsedate #1:20#2#3#4#5#6#7#8\empty{20#2#3/#4#5/#6#7}
+\def\moddate#1{\expandafter\parsedate\pdffilemoddate{#1}\empty}
+
 \renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
 
 \usepackage{titlesec} % Allows creating custom \section's
@@ -53,19 +57,28 @@
 %----------------------------------------------------------------------------------------
 %	TITLE
 %----------------------------------------------------------------------------------------
-
+\begin{minipage}[t]{0.5\textwidth}
 {\Huge Zane Ma} \vspace{0.5cm}\\ % Your name
 %----------------------------------------------------------------------------------------
+Ph.D. Candidate \\
 University of Illinois at Urbana-Champaign \\
 Department of Computer Science \\
+\emph{Last updated: \moddate{\jobname.tex}}
+
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+\vspace{\baselineskip}
 445 Coordinated Science Laboratory \\
 1308 W Main Street, Urbana IL 61801 \\
-Email: zanema2@illinois.edu \\ 
-Homepage: https://zanema.com \\ 
-
+zanema2@illinois.edu \\ 
+\textbf{\href{https://zanema.com}{zanema.com}}
+\end{flushright}
+\end{minipage}
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
+\vspace{0.3cm}
 
 \section{Education} 
 
@@ -117,11 +130,22 @@ upon the properties of confidentiality, integrity, and authenticity. \\
 %-----------------------------------------------------
 
 \vspace{6pt}
+% {\raggedleft\textit{Accepted: 85 / 522 submissions (16.3\%)}\par}
+
+\textbf{What's in a CA Name? Exploring CA Certificate Control}\\
+\underline{Zane Ma}, Manos Antonakakis, Zakir Durumeric, Michael Bailey.
+\textit{USENIX Security Symposium (Sec '21).} August 2021.
+
+\vspace{12pt}
+
+%-----------------------------------------------------
+
+\vspace{6pt}
 
 {\raggedleft\textit{Accepted: 760 / 3126 submissions (24.3\%)}\par}
 
 \textbf{Measuring Identity Confusion with Uniform Resource Locators}\\
-Joshua Reynolds, Deepak Kumar, \underline{Zane Ma}, Rohan Subramanian, Meishan Wu, Martin Shelton, Joshua Mason, Emily Stark, Michael Bailey
+Joshua Reynolds, Deepak Kumar, \underline{Zane Ma}, Rohan Subramanian, Meishan Wu, Martin Shelton, Joshua Mason, Emily Stark, Michael Bailey.
 \textit{ACM Conference on Human Factors in Computing Systems (CHI '20)} April 2020.
 
 %-----------------------------------------------------
@@ -159,11 +183,8 @@ Seoung Kim, \underline{Zane Ma}, Siddarth Murali, Josh Mason, Andrew Miller, Mic
 {\raggedleft\textit{Accepted: 85 / 522 submissions (16.3\%)}\par}
 
 \textbf{Understanding the Mirai Botnet}\\
-Manos Antonakakis, Tim April, Michael Bailey, Matt Bernhard, Elie Bursztein, Jaime Cochran, Zakir Durumeric, J. Alex Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, \underline{Zane Ma}\textbf{*}, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, Yi Zhou.
+\underline{Zane Ma},Manos Antonakakis, Tim April, Michael Bailey, Matt Bernhard, Elie Bursztein, Jaime Cochran, Zakir Durumeric, J. Alex Halderman, Luca Invernizzi, Michalis Kallitsis, Deepak Kumar, Chaz Lever, Joshua Mason, Damian Menscher, Chad Seaman, Nick Sullivan, Kurt Thomas, Yi Zhou.
 \textit{USENIX Security Symposium (Sec '17).} August 2017.
-
-\vspace{12pt}
-\textit{* denotes primary/first author}
 
 %-----------------------------------------------------
 
@@ -203,7 +224,7 @@ Ariana Mirian, \underline{Zane Ma}, David Adrian, Matthew Tischer, Thasphon Chue
 \section{Teaching} 
 
 \begin{tabular}{rl}
-Fall 2020    & \textbf{CS 461: Intro to Comp.\ Security} \textsc{Teaching Assistant}\\ 
+Fall 2020    & \textbf{CS 461: Intro to Comp.\ Security} \textsc{Teaching Assistant*}\\ 
 Spring 2020	 & \textbf{CS 461: Intro to Comp.\ Security} \textsc{Teaching Assistant}\\ 
 Fall 2019	 & \textbf{CS 461: Intro to Comp.\ Security} \textsc{Teaching Assistant}\\
 Spring 2019	 & \textbf{CS 461: Intro to Comp.\ Security} \textsc{Teaching Assistant}\\  
