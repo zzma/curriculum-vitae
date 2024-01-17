@@ -12,6 +12,8 @@
 \usepackage{etaremune} % reverse number enumerate
 \usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
 
+\usepackage{charter} % Charter font
+
 \usepackage{enumitem}
 
 % Colors for links, text and headings
@@ -50,6 +52,7 @@
 \scshape\Large\raggedright}{}{0em}{}[\color{black}\titlerule]
 
 \titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+\titlespacing{\subsubsection}{0pt}{0pt}{2pt}
 
 \setlength\parindent{0pt}
 
@@ -155,7 +158,7 @@ zane.ma@oregonstate.edu \\
 \section{Research Publications} 
 
 \begin{etaremune}
-
+\itemsep -0.5em 
 %-----------------------------------------------------
 
 \item \textbf{[IMC '23]} 
@@ -236,7 +239,6 @@ Amin Kharraz, \underline{Zane Ma}, Paul Murley, Charles Lever, Joshua Mason, And
 Seoung Kim, \underline{Zane Ma}, Siddarth Murali, Josh Mason, Andrew Miller, Michael Bailey.
 ``\textbf{\href{https://zanema.com/papers/imc18_ethpeers.pdf}{Measuring Ethereum's Peer-to-Peer Network}}.''
 \emph{ACM Internet Measurement Conference (IMC).} November 2018.
-
 (Acceptance rate: 24.7\% = 43 / 174 submissions)
 \vspace{6pt}
 
@@ -279,15 +281,41 @@ Ariana Mirian, \underline{Zane Ma}, David Adrian, Matthew Tischer, Thasphon Chue
 \end{etaremune}
 
 %----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
+%	FUNDING
 %----------------------------------------------------------------------------------------
+
+\section{Funding}
+
+\begin{etaremune}
+\itemsep -0.5em 
+%-----------------------------------------------------
+
+\item PRogrammable INfrastructure for CounterIng Pugnacious Adversaries on a Large Scale (PRINCIPALS) 
+    \begin{itemize}[noitemsep,topsep=0pt]
+        \item \textbf{My role: PI (Subcontract)}
+        \item Funding agency: DARPA
+        \item Personal share: \$196,947 (100\%) 
+        \item Total: \$196,947
+        \item 9/1/2023 to 9/30/2024
+    \end{itemize}
+\vspace{6pt}
+
+\end{etaremune}
+
+
 \newpage 
 
-\section{Invited Talks} 
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS
+%----------------------------------------------------------------------------------------
 
-\textbf{Conferences \& Forums}\\
+\section{Talks} 
+
+\subsubsection*{Conferences \& Forums}
 
 \begin{tabular}{rl}
+Oct. 2023 & \textbf{\href{https://zanema.com/slides/imc23_stale_certs.pdf}{Stale TLS Certificates: Investigating Precarious Third-Party Access to Valid TLS Keys}}\\
+& \emph{ACM Internet Measurement Conference (IMC '23)} \\
 Apr. 2022 & \textbf{\href{https://cps-vo.org/node/82522}{Tracing Your Roots: Exploring the TLS Trust Anchor Ecosystem}}\\
 & \emph{Hot Topics in the Science of Security (HotSoS '22)}\\
 Nov. 2021 & \textbf{\href{https://zanema.com/videos/imc21-roots.mp4}{Tracing Your Roots: Exploring the TLS Trust Anchor Ecosystem}}\\
@@ -304,8 +332,8 @@ Aug. 2017 & \textbf{\href{https://www.youtube.com/watch?v=1pywzRTJDaY}{Understan
 & \emph{USENIX Security Symposium (Sec '17)} \\ 
 \end{tabular} \\
 
-\vspace{0.3cm}
-\textbf{Seminars \& Guest Lectures}\\
+
+\subsubsection*{Seminars \& Guest Lectures}
 
 \begin{tabular}{rl}
 
@@ -340,7 +368,8 @@ Nov. 2017 & \textbf{\href{https://zanema.com/slides/uchicago_mirai.pdf}{Understa
 \section{Teaching} 
 
 \begin{tabular}{rll}
-Fall 2023    & \textbf{CS499/579: Empirical Computer Security{}\textsuperscript{\textdagger}} & \textsc{Instructor} \\
+Fall 2023    & \textbf{\href{https://empirical-security.net}{CS499/579: Empirical Computer Security}\textsuperscript{\textdagger}} & \textsc{Instructor} \\
+% TODO: put teaching scores? 
 Spring 2021    & \textbf{CS 461: Intro to Comp.\ Security} & \textsc{Teaching Assistant}\\ 
 Fall 2020    & \textbf{CS 461: Intro to Comp.\ Security} & \textsc{Teaching Assistant*}\\ 
 Spring 2020	 & \textbf{CS 461: Intro to Comp.\ Security} & \textsc{Teaching Assistant}\\ 
@@ -359,24 +388,41 @@ Fall 2015	 & \textbf{CS 241: System Programming} & \textsc{Teaching Assistant*}\
 %----------------------------------------------------------------------------------------
 %	MENTORSHIP
 %----------------------------------------------------------------------------------------
-\section{Mentorship} 
-\begin{tabular}{rlll}
-2022 -- \textsc{pres.} & \textbf{Boladji Vinny Adjibi} & \textsc{Ph.D.} & Defensive DNS registrations.\\ 
-2022 -- \textsc{pres.} & \textbf{Pierros-Christos Skafidas} & \textsc{Ph.D.} & Security threat log correlation.\\ 
-2022 -- \textsc{pres.} & \textbf{Tillson Galloway} & \textsc{Ph.D.} & Adversarial ML for DNS reputation.\\ 
-2021 -- \textsc{pres.} & \textbf{Aaron Faulkenberry} & \textsc{Ph.D.} & DNS name registration abuse.\\ 
-2021 -- \textsc{pres.} & \textbf{Athanasios Avgetidis} & \textsc{Ph.D.} & Malware DNS lifecycle dynamics.\\ 
-2021 -- \textsc{pres.} & \textbf{Kevin Sam Tharayil} & \textsc{Ph.D.} & DNS flow-stitching.\\ 
-2021 -- \textsc{pres.} & \textbf{Kevin Valakuzhy} & \textsc{Ph.D.} & Automated malware analysis.\\ 
-2021 -- \textsc{pres.} & \textbf{Thomas Papastergiou} & \textsc{Ph.D.} & TLS certificate ownership.\\ 
-2021 -- 2022			 & \textbf{Anthony Boueid} & \textsc{Masters} & Web tracking via DNS/SMTP/HTTP.\\ 
-2020 -- 2021             & \textbf{James Austgen} & \textsc{Undergrad} & Mapping IoT root certificate stores from firmware.\\ 
-2019 -- 2020	         & \textbf{Zhengdai Hu} & \textsc{Undergrad} & Working on CA audit/policy analysis.\\ 
-2018 -- 2019	         & \textbf{Kaishen Wang} & \textsc{Masters} & Thesis: Web scanning domain blacklists.\\
-2017 -- 2018	         & \textbf{Siddarth Murali} & \textsc{Masters} & Thesis: Ethereum neighbor inference.\\ 
-2017 -- 2018	         & \textbf{Simon Kim} & \textsc{Masters} & Thesis: Ethereum P2P network measurement.\\  
-2017 -- 2018	         & \textbf{Joseph Dickinson} & \textsc{Undergrad} & Thesis: Tracking browser security indicators.\\  
-2016 -- 2017	         & \textbf{Alex Mitsdarfer} & \textsc{Masters} & Thesis: Institutional Active Directory usage.\\ 
+\section{Mentorship}
+
+\subsubsection*{Ph.D. students}
+\begin{tabular}{rll}
+2024 -- \textsc{pres.} & \textbf{Michelle Lewis} & \\ 
+% 2024 -- \textsc{pres.} & \textbf{Junbeom In} & SOC operations.\\ 
+\end{tabular}\\
+
+\subsubsection*{Masters students}
+\begin{tabular}{rll}
+2023 -- \textsc{pres.} & \textbf{Lucas Ball} & \\ 
+% 2024 -- \textsc{pres.} & \textbf{Junbeom In} & Ph.D. & SOC operations.\\ 
+\end{tabular}\\
+
+\subsubsection*{Undergraduate}
+\begin{tabular}{rll}
+2023 -- \textsc{pres.} & \textbf{Abigail Whittle} & Domain registration economics.\\ 
+2023 -- \textsc{pres.} & \textbf{Lucas Stephens} & User authentication breaches.\\ 
+
+%2022 -- \textsc{pres.}   & \textbf{Boladji Vinny Adjibi} & \textsc{Ph.D.} & Defensive DNS registrations.\\ 
+%2022 -- \textsc{pres.}   & \textbf{Tillson Galloway} & \textsc{Ph.D.} & Adversarial ML for DNS reputation.\\ 
+%2021 -- \textsc{pres.}   & \textbf{Aaron Faulkenberry} & \textsc{Ph.D.} & DNS name registration abuse.\\ 
+%2021 -- \textsc{pres.}   & \textbf{Athanasios Avgetidis} & \textsc{Ph.D.} & Malware DNS lifecycle dynamics.\\ 
+%2021 -- \textsc{pres.}   & \textbf{Kevin Sam Tharayil} & \textsc{Ph.D.} & DNS flow-stitching.\\ 
+%2022 -- 2023             & \textbf{Pierros-Christos Skafidas} & \textsc{Ph.D.} & Security threat log correlation.\\ 
+%2021 -- 2023             & \textbf{Kevin Valakuzhy} & \textsc{Ph.D.} & Automated malware analysis.\\ 
+%2021 -- 2023             & \textbf{Thomas Papastergiou} & \textsc{Ph.D.} & TLS certificate ownership.\\ 
+%2021 -- 2022			 & \textbf{Anthony Boueid} & \textsc{Masters} & Web tracking via DNS/SMTP/HTTP.\\ 
+%2020 -- 2021             & \textbf{James Austgen} & \textsc{Undergrad} & Mapping IoT root certificate stores from firmware.\\ 
+%2019 -- 2020	         & \textbf{Zhengdai Hu} & \textsc{Undergrad} & Working on CA audit/policy analysis.\\ 
+%2018 -- 2019	         & \textbf{Kaishen Wang} & \textsc{Masters} & Thesis: Web scanning domain blacklists.\\
+%2017 -- 2018	         & \textbf{Siddarth Murali} & \textsc{Masters} & Thesis: Ethereum neighbor inference.\\ 
+%2017 -- 2018	         & \textbf{Simon Kim} & \textsc{Masters} & Thesis: Ethereum P2P network measurement.\\  
+%2017 -- 2018	         & \textbf{Joseph Dickinson} & \textsc{Undergrad} & Thesis: Tracking browser security indicators.\\  
+%2016 -- 2017	         & \textbf{Alex Mitsdarfer} & \textsc{Masters} & Thesis: Institutional Active Directory usage.\\ 
 \end{tabular}\\
 
 
@@ -387,34 +433,31 @@ Fall 2015	 & \textbf{CS 241: System Programming} & \textsc{Teaching Assistant*}\
 
 \section{Service}
 
-\textbf{Professional}\\
+\subsubsection*{Professional}
 
-\begin{tabular}{rlr}
+\begin{tabular}{rll}
 2024 & \textbf{IEEE Symposium on Security and Privacy (S\&P)} & \emph{Program Committee} \\ 
 2023 & \textbf{Workshop on IoT Security and Cyber Threat Intelligence (IoT SCTI)} & \emph{Program Committee} \\
 2023 & \textbf{Workshop on Cryptography Applied to Transparency Systems (CATS)} & \emph{Program Committee} \\ 
 2023 & \textbf{NSF Secure and Trustworthy Computing (SaTC)} & \emph{Panel Reviewer} \\
 2023 & \textbf{IEEE Symposium on Security and Privacy (S\&P)} & \emph{Program Committee} \\ 
 2022 & \textbf{ACM Conference on Computer and Communications Security (CCS)} & \emph{Program Committee} \\
-2018 & \textbf{ACM Internet Measurement Conference (IMC)} & \emph{Student PC} \\
+% 2018 & \textbf{ACM Internet Measurement Conference (IMC)} & \emph{Student PC} \\
 \end{tabular} \\
 
+\subsubsection*{Institutional}
 
-
-\vspace{0.3cm}
-
-\textbf{Institutional}\\
-
-\begin{tabular}{rlr}
-2023 -- \textsc{present} & \textbf{Graduate Admissions Committee} & \emph{General Member} \\
-2019 -- 2021 & \textbf{Engingeering Graduate Student Advisory Committee} & \emph{General Member} \\
-2019 -- 2021 & \textbf{Engingeering Graduate Student Advisory Committee} & \emph{General Member} \\
-2018 -- 2021 & \textbf{CS Graduate Student Organization} & \emph{General Member} \\
-2016 -- 2021 & \textbf{CS Graduate Ambassador}\\
-2019 -- 2020 & \textbf{CS Committee on Broadening Participation in Computing}  & \emph{Student Member} \\
-2017 -- 2019 & \textbf{Senate Committee on IT}  & \emph{Student Member} \\
-2017 -- 2018 & \textbf{CS Graduate Student Organization} & \emph{Social Chair} \\
-2016 -- 2018 & \textbf{Students Advising Graduate Education} & \emph{General Member} \\
+\begin{tabular}{rll}
+2023 -- \textsc{present} & \textbf{Graduate Admissions Committee} & \emph{Member} \\
+2023 -- \textsc{present} & \textbf{\href{https://osusec.org/}{OSU Security Club}} & \emph{Faculty Advisor} \\
+%2019 -- 2021 & \textbf{Engingeering Graduate Student Advisory Committee} & \emph{General Member} \\
+%2019 -- 2021 & \textbf{Engingeering Graduate Student Advisory Committee} & \emph{General Member} \\
+%2018 -- 2021 & \textbf{CS Graduate Student Organization} & \emph{General Member} \\
+%2016 -- 2021 & \textbf{CS Graduate Ambassador}\\
+%2019 -- 2020 & \textbf{CS Committee on Broadening Participation in Computing}  & \emph{Student Member} \\
+%2017 -- 2019 & \textbf{Senate Committee on IT}  & \emph{Student Member} \\
+%2017 -- 2018 & \textbf{CS Graduate Student Organization} & \emph{Social Chair} \\
+%2016 -- 2018 & \textbf{Students Advising Graduate Education} & \emph{General Member} \\
 \end{tabular} \\
 
 
@@ -422,7 +465,7 @@ Fall 2015	 & \textbf{CS 241: System Programming} & \textsc{Teaching Assistant*}\
 
 \section{References}
 
-\begin{itemize}[label={}]
+\begin{itemize}[label={}, leftmargin=*]
 \setlength\itemsep{0.2em}
 \item Michael Bailey\\
 Professor and Founding Chair of School of Cybersecurity and Privacy (SCP)\\
